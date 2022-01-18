@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<title>Absolute Positioning</title>
+	<style type = "text/css">
+		.background_image { position: absolute;
+							top: 0px;
+							left: 260px;
+							z-index: 1; }
+		.foreground_image { position: absolute;
+							top: 0px;
+							left: 0px;
+							z-index: z; }
+		.text			   { position: absolute;
+							 top: 100px;
+							 left: 120px;
+							 z-index: 3;
+							 font-size: 20pt;
+							 font-family: tahoma, geneva, sans-serif; }
+	</style>
+  </head>
+<body>
+		<p><img src = "Images/backgroundimage.png"
+				class = "background_image"
+				 alt = "First Positioned Image" /></p>
+	
+		<p><img src = "Images/foreground.jpg"
+				class = "foreground_image"
+			 	alt = "Second Positioned image" /></p>
+		<p class = "text">Bangtan Sonyeondan</p>
+	
+</body>
+</html>

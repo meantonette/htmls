@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+table { width: 300px;
+					border-collapse: collapse;
+					background-color: lightsalmon; }
+			table, td, th { border: 1px solid black;
+						padding: 4px; }
+			th 			{ text—align: left;
+						color: white;
+						background-color: crimson; }
+			tr.oddrow { background-color: white; }
