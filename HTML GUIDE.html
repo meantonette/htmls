@@ -10,26 +10,67 @@
     <!-- defaulting to css-->
     <style> 
         p{
-            color:chocolate;
+            color:rgb(144, 30, 210);
+            font-size: 35px;
         }
         
         h1{
             color:cornflowerblue;
+        }
+
+        table {
+            border-color: crimson;
+            border: 2px solid rgb(0, 255, 64);
+        }
+        tbody{
+
+         background-color: rosybrown;
+         
         }
     </style>
 
 </head>
 <body>
     <header>
+        <!-- Specifies the webpage header. Could also be used for objects inside the webpage -->
+
         <div id = "navbar">
             <ul>
                 <li><a class = "nav-link scrollto" href="#Up">Start Page</a></li>
                 <li><a class = "nav-link scrollto" href="#Textformats">TEXT FORMATS</a></li>
                 <li><a class = "nav-link scrollto" href="#Links">LINKS</a></li>
                 <li><a class = "nav-link scrollto" href="#Img">Img</a></li>
+                <li><a class = "nav-link scrollto" href="#List">LISTS</a></li>
+                <li><a class = "nav-link scrollto" href="#FORMS">FORMS</a></li>
+                <li><a class = "nav-link scrollto" href="#Tables">TABLES</a></li>
+                <li><a class = "nav-link scrollto" href="#OBFE">OBJECTS,iFRAME, EMBED</a></li>
+                <li><a class = "nav-link scrollto" href="#newtags">NEW TAGS</a></li>
+                <li><a class = "nav-link scrollto" href="#OTHERS">OTHERS</a></li>
+
             </ul>
         </div>
     </header>
+
+<!-- CHAR OBJ
+&#34; &quot;
+Quotation Marks - “
+&#60; &lt;
+Less than sign - <
+&#62; &gt;
+Greater than sign - >
+&#160; &nbsp;
+Non-breaking space
+&#169; &copy;
+Copyright symbol - ©
+&#38; &amp;
+Ampersand - &
+&#64; &Uuml;
+@ Symbol - @
+&#149; &ouml;
+Small bullet - •
+&#153; &ucirc;
+Trademark -->
+
     <section id = "Up">
     <div> 
         <!-- Headers are from 1-6 /Use to describe content-->
@@ -51,50 +92,309 @@
 
     <section id = "Textformats">
         <div> 
-           <strong>TEXT FORMATS</strong> <!--to make the text bold-->
-           <b>|same bold text </b> <!-- another way-->
-           <em>| emphasis, displayed italics </em>
-           <i>| same italics </i> <!-- another way-->
-           <strike>| Strike through text </strike>
-           <cite>| cite or reference information </cite>
-           <pre>| monospace text </pre>
-           <del>| denote a prev deleted sec of text </del>
-           <ins>| texts inserted into the doc </ins>
-           <blockquote>| reserved for long paragraphs </blockquote>
-           <q>| use for shorter quotations </q>
-           <abbr>| help to denote abbreviation</abbr>
-           <address> |displays author contact info </address>
-           <dfn>| inline definition in the body text </dfn>
-           <code>|displays code snippets </code>
+           
+           <h1><strong>TEXT FORMATS</strong></h1><!--to make the text bold--> <br /> 
+           <b>same bold text </b> <!-- another way--> <br/> 
+           <em> emphasis, displayed italics </em><br/> 
+           <i> same italics </i> <!-- another way--><br/> 
+           <strike> Strike through text </strike><br/> 
+           <cite> cite or reference information </cite><br/> 
+           <pre> monospace text </pre><br/> 
+           <del> denote a prev deleted sec of text </del><br/> 
+           <ins> texts inserted into the doc </ins><br/> 
+           <blockquote> reserved for long paragraphs </blockquote><br/> 
+           <q> use for shorter quotations </q><br/> 
+           <abbr> help to denote abbreviation</abbr><br/> 
+           <address> displays author contact info </address><br/> 
+           <dfn> inline definition in the body text </dfn><br/> 
+           <code>displays code snippets </code>
+
            <!-- superscript, to subscript the texts -->
            <sub>shrinking text, below text</sub>
            <sup>placing it half line higher than prev text</sup>
-           <small>reduce text size</small>
+           <small>reduce text size</small><br /> 
            <bdo>bi-directional override tag, identify which txt should be read</bdo>
         </div>
         </section>  
 
+        <br/>
         <hr/>
 
         <section id = "Links">
             <div>
-              <a href ="https://techterms.com/definition/hyperlink#:~:text=A%20hyperlink%20is%20a%20word,don't%20have%20to%20be.">for Hyperlinks</a>
-              <a href ="meantonette.medalla@tup.edu.ph">another for emailing</a>
-              <a href = "09352713954">to make phone num clickable</a>
+            <h1><b>LINKS</b></h1>
+              <a href ="https://techterms.com/definition/hyperlink#:~:text=A%20hyperlink%20is%20a%20word,don't%20have%20to%20be." target="_blank"> for Hyperlinks </a>
+              <a href ="meantonette.medalla@tup.edu.ph"></a> <!-- another for emailing-->
+              <a href = "09352713954"></a> <!-- to make phone num clickable -->
+                <br/>
+
               <!-- di naman nagana saken-->
               <a name = "name">bringing users to specific docu</a>
+              <br/>
               <a href="#name">brings users specifically to a div element</a>
             </div>
         </section>
 
-<hr/>
+        <br/>
+        <hr/>
 
         <section id = "Img">
             <div>
+                <h1><b>IMAGES</b></h1>
                 <img src = "halloween/css/cssimages/header.jpg" alt="lantern"> <!--display img-->
-                
+                <!-- <img src = "halloween/css/cssimages/dropcap_M.gif" width = "50" height = "50" alt="letterM" usemap="#halloweens"> display img -->
+
+                <!-- inside the <img/>
+                src = "url" -url of the image
+                alt = "text" -to explain the image content
+                height = " " -to specify img height in px or %
+                width = " " -to specify img height in px or %
+                aligh = " " -to align image
+                border = " " -explains border thickness
+                vspace = " " -denote spacing on top or bot of img
+                hspace = " " -denote spacing on top or bot of img -->
+
+                <!-- <map></map> -tell users its interactive img w/ clickable areas
+                <map name="name"></map> -associated between img and map 
+                <area/> -specify the area of img map-->
+
+                <!-- <map name = "halloweens">
+                    <area shape = "rectangle" coords = "124,58,8" href= "halloween/images/Graveyard.jpg" alt = "web">
+                </map> -->
             </div>
         </section>
+
+        <br/>
+        <hr/>
+
+        <section id = "List">
+            <div>
+                <h1><b>LISTS</b></h1>
+                <ol>create numbered(ordered) lists
+                    <li>li-specidies each item numbered</li>
+                    <li>dos</li>
+                    <li>tres</li>
+                </ol>
+                <ul>display (unordered)list/bulleted form
+                    <li>uno</li>
+                    <li>dos</li>
+                    <li>tres</li>
+                </ul>
+                <dl>reserved specifically for list items definition</dl>
+                <dt>single term inline w/ body context</dt>
+                <dd>descrip for the defined term ^^</dd>
+                <dt>example GANDA</dt>
+                <dd>ganda is beautiful in english HAHA</dd>
+            </div>
+        </section>
+
+        <br/>
+        <hr/>
+
+        <section id = "FORMS">
+          
+                <h1><b>FORMS</b></h1>
+               
+<!-- form -creates a form 
+action = "url" - where data is to be sent when a user submits the form
+method = " " -get post, which dictated how to send the form data
+enctype = " " -(for method post only), dictates how the form data is to be encoded when submitting info back to web server
+autocomplete = dictates whether a form should have autocomplete on/off
+novalidate = dictates whether a form should not be validated when submitted
+accept-charsets = identify char encodings upon for submit
+target = tells where to display the form after being submitted ex _blank, _self, _parent _top  -->
+
+<fieldset>identifies the group of all fields on the form</fieldset>
+<label>simple field label, telling user what to enter in each field</label>
+<legend>acts as a caption for the fieldset element</legend> <br/>
+<!-- <input/> a textbox, defines the type of field information to receive from user -->
+
+<form action="POST">EXAMPLE OF A FORM</form>
+<form action="/action.php" method="post">
+    Name: <input name="name" type="text" /> <br /> 
+    Age: <input max="99" min="1" name="age" step="1" type="number" value="18" /> <br />
+    <select name="gender">
+    <option selected="selected" value="male">Male</option>
+    <option value="female">Female</option>
+    </select><br /> 
+    <input checked="checked" name="newsletter" type="radio" value="daily" /> Daily <input name="newsletter" type="radio" value="weekly" /> Weekly<br />
+    <textarea cols="20" name="comments" rows="5">Comment</textarea><br /> <!--Textarea adjustable box-->
+    <label><input name="terms" type="checkbox" value="tandc" />Accept terms</label> <br />
+    <input type="submit" value="Submit" />
+    </form>
+
+      <h1>Input type attributes</h1> 
+       <!-- type = " " -specifies the field input type (eg text,pass,date,checkbox)
+       name = " " -describes the name of form 
+       value = " " -describes value/input field information
+       size = " " -specifies the input elemt width in char
+       maxlength = " " -maximum input element char num allowed
+       required - making sure the <input> element is completely filled out
+       step = " " -legal number intervals for an input field
+       width = " " - width of the input element in pixel values.
+
+height= " " - height of the input element in pixel values.
+placeholder= " "- to give hints to the user about the nature of the requested data.
+pattern=" " -Specifies a regular expressionused to look for patterns in the user’s text.
+min= " " - The minimum value allowed for an <input> element.
+max= " " - The maximum value allowed for an <input> element.
+autofocus - Forces focus on the input element when webpage loads completely.
+disabled - Disables the input element. User can no longer enter data. -->
+
+<textarea name= "descript"> For longer strings of input. used to get multi-sentence text. </textarea>
+<select>  
+
+<!-- select attributes:
+name= " " - name of a particular list of options.
+size= " " -Total number of options given to the user.
+multiple = " " -user can choose multiple options from the list. 
+required - Specifies whether choosing an option/s is necessary for form submission.
+autofocus - Specifies that a drop-down list automatically comes into focus after a page loads. -->
+
+<option value="descrip">select - list of options which the user can choose from.</option>
+<option value = "to insert">to list individual item in the list</option>
+<!-- option attributes:
+value= " " - The text visible to the user for any given option.
+selected - Determines which option is selected by default when the form loads. -->
+</select>
+
+<button> Tag for creating a button for form submission. </button>
+</section>
     
+
+<br/>
+<hr/>
+
+<section id = "Tables"> 
+    <div>
+        <h1><b>TABLES</b></h1>
+        <table> <!--Marks a table in a webpage. -->
+        <colgroup> <!--Used for grouping columns together.-->
+            <col span = "3">
+            <col> <!--Denotes a column inside a table.-->
+        </colgroup>
+
+            <caption>  Description of the table</caption>
+
+            <thead> <!-- specific columns of the table. -->
+          
+            <tbody> <!--The body of a table, where the data is held.-->
+        
+            <tr> <!--single row in a table. -->
+                <th> heading of a table’s column. </th>
+                <th> another column. </th>
+            </tr>
+
+         <tr>
+             <td> A single cell of a table. </td>
+             <td> Contains the actual value/data. </td>
+         </tr>
+
+        </tbody>
+        </thead>
+    </table> 
+    <tfoot> footer of the table. </tfoot>
+    </div>
+</section>
+
+<br/>
+<hr/>
+
+ <section id = "OBFE">
+    <div>
+        <h1><b>OBJECTS, iFRAMES, EMBED</b></h1>
+<!-- OBJECTS AND iFRAMES
+<object> embed additional multimedia into a webpage. </object>
+
+height= " " -object height in pixel values.
+width= " "-object width in pixel values.
+type= " "- The type/format of the object’s contents.
+<iframe> … </iframe>
+An inline block of content, container for multimedia in a flexible manner. 
+It floats inside a webpage, meaning it is placed relative to other webpage items. -->
+
+<!-- iFRAMES
+
+name= " " The name of the iFrame.
+src= " " URL/path of the multimedia object
+srcdoc= " " to be displayed inside the iFrame.
+height= " " - the height of the iFrame.
+width= " "- the width of the iFrame.
+<param /> -For iFrame customization. additional parameters to go along with the content.
+<embed> … </embed> This is used to embed external objects, like plugins (e.g. a flash video). -->
+
+<!-- EMBED ATTRIBUTES 
+
+height=" " - the height of the embedded item.
+width= " "- the width of the embedded item.
+type=" "- type or format of the embedded content.
+src=" " -The URL/path of the embedded item. -->
+
+<object width="500" height="0"></object>
+<iframe src= "anotha.html" width="500" height="500"></iframe>
+<embed src= "index.html" width="500" height=“500"></embed>
+</div>
+</section> 
+
+<br/>
+<hr/>
+
+ <section id = "newtags">
+    <div>
+
+        <b><h1>NEW TAGS</h1></b>
+<footer> Specifies the webpage footer. Could also be used
+    for objects inside the webpage. </footer>
+
+<main> <!--Marks the main content of the webpage.-->
+
+<article>Denotes an article.</article>
+
+<aside> Denotes content displayed in a sidebar </aside>
+
+<section></section> <!--Specifies a particular section in the webpage.-->
+
+<details> Used for additional information. User has
+    the option to view or hide this. </details>
+
+<summary> Used as a heading for the above tag. Is always
+    visible to the user.</summary>
+
+<dialog>Used to create a dialog box.</dialog>
+
+<figure>A tag reserved for figures (diagrams, charts) in HTML5.</figure>
+
+<figcaption> A description of the figure is placed inside these.</figcaption> 
+
+<mark>Used to highlight a particular portion of the text.</mark> 
+
+<nav></nav> <!--Navigation links for the user in a webpage-->
+
+<menuitem></menuitem> <!--A particular item from a list or a menu.-->
+
+<meter></meter> <!--Measures data within a given range.-->
+
+<progress> </progress> <!--used as a progress bar, this is used to track progress.-->
+
+<!-- <rp>…</rp>-showing text for browsers without ruby annotation support.
+
+<rt>…</rt>-Displays East Asian typography character details.
+
+<ruby>…</ruby> -Describes a Ruby annotation for East Asiantypography -->
+
+<!-- <time></time>-formatting date and time. -->
+ <wbr> <!---line-break within the content -->
+</main>
+</div>
+</section> 
+
+<section id = "OTHERS">
+    <div>
+<p contenteditable>make your content editable</p>
+<p style= "caret-color: brown" contenteditable>content editable with style</p>
+<p style= "outline: none;" contenteditable>content editable no border</p>
+</div>
+</section> 
+
 </body>
 </html>
