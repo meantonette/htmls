@@ -1,0 +1,43 @@
+
+p{
+    color:rgb(144, 30, 210);
+    font-size: 35px;
+}
+
+h1{
+    color:cornflowerblue;
+}
+
+/* when you hover the headers text  */
+h1:hover{ 
+background-color: burlywood;
+color: black;
+}
+
+table {
+    border-color: crimson;
+    border: 2px solid rgb(0, 255, 64);
+}
+
+tbody{
+ background-color: rosybrown; 
+}
+
+/* class in html */
+.txtformat{
+background-color: aqua;
+}
+
+.formfrmt{
+    background-color: burlywood;
+}
+
+/* when link has been visited or not visited (link), change the default color */
+a:visited { 
+color: green; 
+}
+
+a:link {
+    color: blue;
+} 
+

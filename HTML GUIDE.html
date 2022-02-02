@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML GUIDE</title>
     <base/ file:///D:/0ARAL/HTML/HTML%20COMMANDS.webp> <!--For specifying relative links-->
+    <link rel="stylesheet" href="/style.css"> <!--to link .css-->
     
     <!-- defaulting to css-->
-    <style> 
+    <!-- <style> (Internal style)(i moved it to .css)
         p{
             color:rgb(144, 30, 210);
             font-size: 35px;
@@ -25,9 +26,9 @@
         tbody{
 
          background-color: rosybrown;
-         
+
         }
-    </style>
+    </style> -->
 
 </head>
 <body>
@@ -83,14 +84,14 @@ Trademark -->
         <!-- p- to organize paragraphs-->
         <!-- span- inline section or block container /use for group styling-->
         <p>to organize <span style= "color: rgb(0, 255, 64);">paragraphs</span> of text </p>
-
+        <p>PARENTHESIS</p>
     </div>
     </section>  
 
          <!--br- creates line break-->
          <br/> 
 
-    <section id = "Textformats">
+    <section id = "Textformats" class = "txtformat">
         <div> 
            
            <h1><strong>TEXT FORMATS</strong></h1><!--to make the text bold--> <br /> 
@@ -191,40 +192,54 @@ Trademark -->
         <br/>
         <hr/>
 
-        <section id = "FORMS">
+        <section class = "formfrmt" id = "FORMS">
           
                 <h1><b>FORMS</b></h1>
                
 <!-- form -creates a form 
-action = "url" - where data is to be sent when a user submits the form
-method = " " -get post, which dictated how to send the form data
+
 enctype = " " -(for method post only), dictates how the form data is to be encoded when submitting info back to web server
-autocomplete = dictates whether a form should have autocomplete on/off
+
 novalidate = dictates whether a form should not be validated when submitted
-accept-charsets = identify char encodings upon for submit
-target = tells where to display the form after being submitted ex _blank, _self, _parent _top  -->
+accept-charsets = identify char encodings upon for submit syntax example: <form accept-charset="UTF-8">
+target = tells where to display the form after being submitted ex _blank, _self, _parent _top  ex <a href="url" target="_blank">-->
 
-<fieldset>identifies the group of all fields on the form</fieldset>
+
+<form action="POST" >EXAMPLE OF A FORM</form>
+<fieldset> <!-- identifies the group of all fields on the form (looks like a container in vb,inside is the form)--> 
+   
+    <legend>FORM</legend> <!--acts as a caption for the fieldset element-->
+
 <label>simple field label, telling user what to enter in each field</label>
-<legend>acts as a caption for the fieldset element</legend> <br/>
-<!-- <input/> a textbox, defines the type of field information to receive from user -->
 
-<form action="POST">EXAMPLE OF A FORM</form>
-<form action="/action.php" method="post">
+<br/>
+
+<form action="/action.php" method="post" autocomplete = "on">
+<!-- action = "url" - where data is to be sent when a user submits the form
+method = " " -get post, which dictated how to send the form data
+autocomplete = dictates whether a form should have autocomplete on/off -->
+
     Name: <input name="name" type="text" /> <br /> 
     Age: <input max="99" min="1" name="age" step="1" type="number" value="18" /> <br />
+    <!-- <input/> a textbox, defines the type of field information to receive from user -->
+
     <select name="gender">
     <option selected="selected" value="male">Male</option>
     <option value="female">Female</option>
     </select><br /> 
     <input checked="checked" name="newsletter" type="radio" value="daily" /> Daily <input name="newsletter" type="radio" value="weekly" /> Weekly<br />
+    
     <textarea cols="20" name="comments" rows="5">Comment</textarea><br /> <!--Textarea adjustable box-->
+
     <label><input name="terms" type="checkbox" value="tandc" />Accept terms</label> <br />
     <input type="submit" value="Submit" />
+    </fieldset> 
     </form>
 
       <h1>Input type attributes</h1> 
-       <!-- type = " " -specifies the field input type (eg text,pass,date,checkbox)
+
+       <!-- example, above form ^^
+           type = " " -specifies the field input type (eg text,pass,date,checkbox)
        name = " " -describes the name of form 
        value = " " -describes value/input field information
        size = " " -specifies the input elemt width in char
@@ -253,14 +268,15 @@ autofocus - Specifies that a drop-down list automatically comes into focus after
 
 <option value="descrip">select - list of options which the user can choose from.</option>
 <option value = "to insert">to list individual item in the list</option>
+
 <!-- option attributes:
 value= " " - The text visible to the user for any given option.
 selected - Determines which option is selected by default when the form loads. -->
 </select>
 
-<button> Tag for creating a button for form submission. </button>
+<button> create a button for form submission. </button>
+
 </section>
-    
 
 <br/>
 <hr/>
@@ -376,14 +392,22 @@ src=" " -The URL/path of the embedded item. -->
 
 <progress> </progress> <!--used as a progress bar, this is used to track progress.-->
 
-<!-- <rp>…</rp>-showing text for browsers without ruby annotation support.
+<h6>example of ruby and rp</h6>
+<ruby>
+    漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp>
+</ruby>
 
-<rt>…</rt>-Displays East Asian typography character details.
-
-<ruby>…</ruby> -Describes a Ruby annotation for East Asiantypography -->
+<!--<ruby>…</ruby> -Describes a Ruby annotation for East Asiantypography 
+<rp>…</rp>-showing text for browsers without ruby annotation support.
+<rt>…</rt>-Displays East Asian typography character details.-->
 
 <!-- <time></time>-formatting date and time. -->
- <wbr> <!---line-break within the content -->
+
+<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+<!-- <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p> -->
+
+<wbr> <!---line-break/ big space within the content -->
+
 </main>
 </div>
 </section> 
