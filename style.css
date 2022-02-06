@@ -41,3 +41,49 @@ a:link {
     color: blue;
 } 
 
+.flexbox-container {
+display: flex; /* to have the box same height and width in one row and it fits in the browser if u minimize it  */
+/* flex-wrap: wrap; /* wrap to diff lines instead of shrinking lines*/
+background-color: black;
+/* height: 300px; change height of container */
+
+/* justify-content: flex-start; all the elements will line at the start of the row */
+/* justify-content: center; to center the box */
+/* justify-content: space-between; to even space between boxes */
+/* justify-content: space-around; to even space around/all sides of boxes */
+/* align-items: stretch; to align flexbox evenly, they grow if small */
+/* align-items: flex-start; align boxes but not same height based on their design */
+/* align-items: center; align boxes in the center of the container but not same height based on their design */
+/* align-content: center; if using multiline container | flex-end flex-start align them at the bot & top of container |*/
+
+/* flex-direction: column; column outline | even if u use justify center it will not center because it is in column form but if u use align items it will center */
+
+
+}
+
+.flexbox-item {
+    /* default size kung hindi nalagyan */
+width: 200px;
+margin: 10px;
+border: 2px solid black;
+background-color: antiquewhite;
+}
+
+.flexbox-item-1 {
+    min-height: 150px;
+    /* flex-shrink: 0;  it will not resize if you resize your browser*/
+    /* order: 3; change its position dont forget to add this to diff box to allign them */
+}
+
+.flexbox-item-2 {
+    /* flex: 1 0 0px;flexgrow, flexshrink,flex basis */
+    /* flex: 1; it will assign the ^^  */
+        min-height: 250px;
+        /* flex-grow: 1; (add remaining space to width in the item)will grow and take up space no matter what the size of your browser | you can still add this to diff item so they are the same to grow*/
+        /* flex-basis: 0; to override the default width, so if u put 2 the size will be x2 to its original size */
+        /* align-self: center; override the other line containers |if flex end it will allign to bot*/
+    /* order:1; */
+}
+
+    /* repeat the process and declaration to add more flexbox */
+
